@@ -31,4 +31,4 @@ All of the following folders are projects done during the studies:
 | [`0x0E-SQL_more_queries`](https://github.com/luischaparroc/holbertonschool-higher_level_programming/tree/master/0x0E-SQL_more_queries) | It aims to learn about how to create a new user, manage privileges for a user, `PRIMARY KEY`, `FOREIGN KEY`, constraints, subqueries, `JOIN` and `UNION` with **MySQL** |
 | [`0x0F-python-object_relational_mapping`](https://github.com/luischaparroc/holbertonschool-higher_level_programming/tree/master/0x0F-python-object_relational_mapping) | It aims to learn about how to connect to a MySQL database from a Python script, what ORM means and how to map a Python Class to a MySQL table |
 
-All Project coded by ** ##[ Abasienyene Lawrence  ](https://github.com/Abasienyene)**.
+All Project coded by ## [ Abasienyene Lawrence  ](https://github.com/Abasienyene).
