@@ -1,33 +1,26 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
-  * algorithm: Floyd's tortoise and hare
-  * check_cycle - Cycle detection
-  * @list: single list
-  *
-  * Return: 1, 0
-  */
+ * check_cycle - checks if a linked list contains a cycle
+ * @list: linked list to check
+ *
+ * Return: 1 if the list has a cycle, 0 if it doesn't
+ */
 int check_cycle(listint_t *list)
 {
-	listint_t *tortoise = list, *hare = list;
-	int detected = 0;
+	listint_t *slow = list;
+	listint_t *fast = list;
 
-	while ((tortoise && hare) && hare->next)
-	{		
-		tortoise = tortoise->next;
+	if (!list)
+		return (0);
 
-		if (hare->next || hare->next->next)	
-			hare = hare->next->next;
-		else
-			break;
-
-		if (tortoise == hare)
-		{
-			detected = 1;
-			break;
-		}
+	while (slow && fast && fast->next)
+	{
+		slow = slow->next;
+		fast = fast->next->next;
+		if (slow == fast)
+			return (1);
 	}
 
-	return (detected);
+	return (0);
 }
